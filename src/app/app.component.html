@@ -1,0 +1,21 @@
+<h1>
+  {{ title }}
+</h1>
+
+<nav>
+  <a routerLink="/home" routerLinkActive="active">Accueil</a>
+  <a routerLink="/products" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Produits</a>
+  <a routerLink="/products/cart" routerLinkActive="active">Carte ({{nbCart}})</a>
+  <a routerLink="/contact" routerLinkActive="active">Contact</a>
+
+
+  <router-outlet></router-outlet>
+
+  <app-notification></app-notification>
+
+  <footer>
+    <hr>
+    <a href="http://www.magisBurundi.com" target="_blank">www.magisBurundi.com</a> 2023 (using Angular v{{version}})
+
+
+  </footer>

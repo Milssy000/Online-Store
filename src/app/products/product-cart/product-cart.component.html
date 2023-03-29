@@ -1,0 +1,17 @@
+<h2>Carte d'achat</h2>
+<div style="margin-bottom: 80px" *ngIf="products?.length == 0">pas de produit sur votre carte</div>
+
+<div style="margin-bottom: 80px" *ngIf="products?.length > 0">
+    <ul class="products">
+        <li *ngFor="let product of products | groupBy:'id'">
+            <span class="name">{{product.value[0].name}}</span>
+            <span class="description">{{product.value[0].description}}</span>
+            <span class="price">{{product.value[0].price | currency:'CAD':'symbol-narrow':'.2'}}
+                x{{product.value.length}}</span>
+        </li>
+    </ul>
+    <h2>Total = {{total | currency:'CAD':'symbol-narrow':'.2'}}</h2>
+    <p>
+        <button (click)="buy()">Acheter maintenant</button>
+    </p>
+</div>
