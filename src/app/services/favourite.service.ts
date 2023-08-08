@@ -7,7 +7,9 @@ export class FavouriteService {
 
     constructor(
         private notificationService: NotificationService
-    ) { }
+    ) {
+        //comment
+    }
 
     private _favourites: Set<Product> = new Set();
     get favourites(): Set<Product> {
