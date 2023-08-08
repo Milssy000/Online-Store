@@ -17,6 +17,7 @@ export class ErrorComponent implements OnInit {
     constructor(
         private activatedRoute: ActivatedRoute,
         private seoService: SeoService) {
+        //comment
     }
 
     ngOnInit() {
