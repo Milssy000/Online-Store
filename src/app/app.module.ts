@@ -102,4 +102,6 @@ const moduleServices = [
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  //comment
+}
