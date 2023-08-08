@@ -30,7 +30,9 @@ export class ProductInsertComponent implements CanDeactivate<any>, OnInit {
     private productService: ProductService,
     private notificationService: NotificationService,
     private router: Router,
-    private dialogService: DialogService) { }
+    private dialogService: DialogService) {
+    //comment
+    }
 
   onSubmit() {
     let newProduct = this.insertForm.value;
