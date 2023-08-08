@@ -11,6 +11,7 @@ export class ErrorService {
   constructor(
     private locationStrategy: LocationStrategy
   ) {
+    //comment
   }
 
   log(error) {
