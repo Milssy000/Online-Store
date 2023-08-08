@@ -6,7 +6,9 @@ import { Component } from '@angular/core';
    
 })
 export class HomeComponent {
-    constructor(private router: Router) { }
+    constructor(private router: Router) {
+        //comment
+    }
 
     code_error(): void {
         throw new Error("testing code error");
