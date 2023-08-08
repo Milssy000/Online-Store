@@ -8,7 +8,9 @@ export class ContactComponent implements OnInit {
 
     constructor(
         private seoService: SeoService
-    ) { }
+    ) {
+        //comment
+    }
 
     ngOnInit(): void {
         this.seoService.setTitleAndDescription('Contactez nous');
