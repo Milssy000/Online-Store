@@ -9,7 +9,9 @@ export class ProductDetailResolveService implements Resolve<Product> {
 
   constructor(
     private ps: ProductService
-    ) {}
+    ) {
+    //comment
+    }
 
   resolve(route: ActivatedRouteSnapshot): Observable<any> | any {
     let id = +route.params['id'];
