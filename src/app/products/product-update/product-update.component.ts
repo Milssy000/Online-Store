@@ -34,7 +34,9 @@ export class ProductUpdateComponent implements CanDeactivate<any>, OnInit {
     private notificationService: NotificationService,
     private router: Router,
     private route: ActivatedRoute,
-    private dialogService: DialogService) { }
+    private dialogService: DialogService) {
+    //comment
+    }
 
   onSubmit() {
     let updatedProduct = this.updateForm.value;
