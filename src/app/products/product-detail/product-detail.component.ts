@@ -25,7 +25,9 @@ export class ProductDetailComponent implements OnInit {
     private route: ActivatedRoute,
     private router: Router,
     private seoService: SeoService
-  ) { }
+  ) {
+    //comment
+  }
 
   deleteProduct(id: number) {
     this.productService
