@@ -62,4 +62,6 @@ const moduleServices = [
         ...moduleServices
     ],
 })
-export class ProductsModule { }
+export class ProductsModule {
+    //comment
+}
