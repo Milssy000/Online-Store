@@ -14,7 +14,9 @@ export class NotificationService {
 
   constructor(
       private locationStrategy: LocationStrategy
-  ) {}
+  ) {
+    //comment
+  }
 
   notifyMessage(message: string): void {
     let notificationContent:AppNotification = {
