@@ -30,7 +30,9 @@ export class ProductListComponent implements OnInit {
     private favouriteService: FavouriteService,
     private router: Router,
     private seoService: SeoService
-  ) { }
+  ) {
+    //comment
+  }
 
   title = "Products";
   message = "";
