@@ -15,6 +15,7 @@ export class AppComponent implements OnInit {
   constructor(
     
     private cartService:CartService) {
+    //comment
 
     }
 
@@ -25,5 +26,6 @@ export class AppComponent implements OnInit {
 
  
   ngOnInit() {
+    //comment
   }
 }
