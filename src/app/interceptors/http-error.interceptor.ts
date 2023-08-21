@@ -17,7 +17,7 @@ export class HttpErrorInterceptor implements HttpInterceptor {
         return next.handle(request)
             .pipe(
                 
-                delayedRetry(500, 3),
+                delayedRetry(300, 2),
               
                 catchError(this.handleError)
             )
