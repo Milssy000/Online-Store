@@ -29,3 +29,4 @@ export class ErrorComponent implements OnInit {
         this.seoService.setTitle('Erreur');
     }
 }
+
