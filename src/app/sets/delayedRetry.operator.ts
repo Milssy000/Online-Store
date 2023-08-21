@@ -4,7 +4,7 @@ import {delay, mergeMap, retryWhen} from 'rxjs/operators';
 const getErrorMessage = (maxRetry: number) =>
   `Tried to load Resource over XHR for ${maxRetry} times without success. Giving up`;
 
-const DEFAULT_MAX_RETRIES = 5;
+const DEFAULT_MAX_RETRIES = 4;
 
 export function delayedRetry(delayMs: number, maxRetry = DEFAULT_MAX_RETRIES) {
   let retries = maxRetry;
