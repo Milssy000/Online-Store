@@ -5,7 +5,7 @@ import { Directive, Input, HostListener, EventEmitter, Output } from '@angular/c
 })
 export class ConfirmDirective {
     @Output() confirm = new EventEmitter<any>(); 
-    @Input() confirmMessage: string = 'Are you sure ?';
+    @Input() confirmMessage: string = 'Are you sure ...?';
 
     @HostListener('click')
     onClick() {
