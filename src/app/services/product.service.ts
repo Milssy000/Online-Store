@@ -101,3 +101,4 @@ export class ProductService {
     this.loadProducts();
   }
 }
+
